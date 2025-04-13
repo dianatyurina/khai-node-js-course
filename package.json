@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node src/index.js",
+    "server": "node --watch src/index.js",
     "migration:generate": "drizzle-kit generate:pg",
     "migration:push": "drizzle-kit push:pg",
     "migration:up": "drizzle-kit up"
@@ -13,6 +13,7 @@
   "author": "Diana Tyurina",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "drizzle-orm": "^0.30.10",
     "express": "^4.21.1",
     "pg": "^8.14.1"
